@@ -1,0 +1,2 @@
+# Preserve byte-identical frozen scientific sources and SHA256 checks across systems.
+* -text
