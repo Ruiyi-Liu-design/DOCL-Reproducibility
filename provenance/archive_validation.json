@@ -1,0 +1,211 @@
+{
+  "status": "PASS",
+  "new_training_models": 0,
+  "new_real_data_scoring": 0,
+  "raw_third_party_feature_files_bundled": 0,
+  "source_and_array_validation": [
+    {
+      "dataset": "yuan_nominal__monks_0_4_variant1",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "yuan_nominal__nursery_variant1",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "old__fraud",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "old__wine",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "old__wdbc",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "old__hepatitis",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "yuan_mreod__yeast1141",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "yuan_numerical__iris_irisvirginica_11_variant1",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "yuan_numerical__pima_true_55_variant1",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "yuan_mixed__abalone_variant1",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "old__satimage-2",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "old__glass",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "yuan_mixed__psdas_dropout_1421",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "old__waveform",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "old__smtp",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "old__pendigits",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "old__mnist",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "yuan_nominal__breast_cancer_variant1",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "yuan_numerical__spambase_spam_56_variant1",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "old__thyroid",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "yuan_nominal__tic_tac_toe_negative_12_variant1",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "yuan_mixed__nhanes_age_364",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "yuan_mixed__adult_morethan50k_343_variant1",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    },
+    {
+      "dataset": "old__donors",
+      "pinned_source_sha256": true,
+      "canonical_X_y_bitwise_equal": true
+    }
+  ],
+  "split_validation_count": 72,
+  "public_copy_metadata_amendments": [
+    [
+      "results/summaries/component_summary.csv",
+      "DDAE_R49",
+      "lambda_value"
+    ],
+    [
+      "results/summaries/component_summary.csv",
+      "DDAE_R49",
+      "margin_coefficient"
+    ],
+    [
+      "results/summaries/final_reference_summary.csv",
+      "DDAE_R49",
+      "lambda_value"
+    ],
+    [
+      "results/summaries/final_reference_summary.csv",
+      "DDAE_R49",
+      "margin_coefficient"
+    ],
+    [
+      "results/summaries/matched_sampling_mixed_summary.csv",
+      "DDAE_mixed",
+      "lambda_value"
+    ],
+    [
+      "results/summaries/matched_sampling_mixed_summary.csv",
+      "DDAE_mixed",
+      "margin_coefficient"
+    ]
+  ],
+  "source_note": "Portable wrapper and validation are new archive helpers; original scientific source files remain byte-identical.",
+  "supplementary_rows_identical_after_path_removal": 5793,
+  "byte_identical_scientific_files": 12,
+  "upstream_data_download_test": {
+    "status": "PASS",
+    "pinned_source_paths": 24,
+    "actual_downloaded_source_files": 24,
+    "canonical_X_y_array_hashes_verified": 24,
+    "downloaded_raw_data_bundled": false
+  },
+  "public_copy_scan": {
+    "status": "PASS",
+    "patterns": [
+      "absolute_Windows_path",
+      "private_workspace_name",
+      "credential_token",
+      "email_address"
+    ],
+    "findings": 0
+  },
+  "synthetic_CPU_check": {
+    "status": "PASS",
+    "device": "cpu",
+    "synthetic_only": true,
+    "optimizer_updates": 0,
+    "real_data_forward_calls": 0,
+    "checks": [
+      "backbone equivalence",
+      "encode/decode equivalence",
+      "private pair RNG",
+      "forward/control loss formulas",
+      "decoder gradient routing",
+      "legacy split",
+      "portable local DDAE-C source loading"
+    ]
+  },
+  "portable_entry_plan": {
+    "dataset": "old__wine",
+    "seed": 42,
+    "setting": "normal-only",
+    "method": "DOCL",
+    "total_epochs": 100,
+    "docl_warmup_included": 20,
+    "lambda_value": 1.2,
+    "c": 2.0,
+    "scoring_seed_A": 2000042,
+    "scoring_seed_B": 12000042,
+    "device": "cuda",
+    "mode": "PLAN_ONLY"
+  }
+}

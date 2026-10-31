@@ -1,0 +1,81 @@
+{
+  "upstream": {
+    "repository": "https://github.com/sattarov/AnoDDAE",
+    "commit": "bc1c5cc827cd8f6a6aa1ef5e75441bfd5b858ec0",
+    "license": "MIT"
+  },
+  "copies": [
+    {
+      "archive_path": "src/ablation_adapter.py",
+      "source_sha256": "3f05f983d015334caad6279949556714224adf4cd1a23320cc8581012ced4f5b",
+      "archive_sha256": "3f05f983d015334caad6279949556714224adf4cd1a23320cc8581012ced4f5b",
+      "copy": "byte-identical final scientific source"
+    },
+    {
+      "archive_path": "src/core.py",
+      "source_sha256": "91248d91f894c8576b90072802c551a46eeacf4d3231bdff8409baef0024831a",
+      "archive_sha256": "91248d91f894c8576b90072802c551a46eeacf4d3231bdff8409baef0024831a",
+      "copy": "byte-identical final scientific source"
+    },
+    {
+      "archive_path": "src/experiments/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "byte-identical final scientific source"
+    },
+    {
+      "archive_path": "src/experiments/docl.py",
+      "source_sha256": "20daccc4c05b5be60cd11b6044b81bfc05ef13c90b1536b307c9681568e9154f",
+      "archive_sha256": "20daccc4c05b5be60cd11b6044b81bfc05ef13c90b1536b307c9681568e9154f",
+      "copy": "byte-identical final scientific source"
+    },
+    {
+      "archive_path": "src/sampling3.py",
+      "source_sha256": "ebcbf6413c533ffc2b74df144ae1a3af9f5879afb13ba3765b0d89c0d63cc272",
+      "archive_sha256": "ebcbf6413c533ffc2b74df144ae1a3af9f5879afb13ba3765b0d89c0d63cc272",
+      "copy": "byte-identical final scientific source"
+    },
+    {
+      "archive_path": "src/vendor/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "byte-identical final scientific source"
+    },
+    {
+      "archive_path": "src/vendor/AnoDDAE/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "byte-identical final scientific source"
+    },
+    {
+      "archive_path": "src/vendor/AnoDDAE/src/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "byte-identical final scientific source"
+    },
+    {
+      "archive_path": "src/vendor/AnoDDAE/src/data.py",
+      "source_sha256": "bb114fa8e077a2e824114d23e82786c2626911884f5d761a50c38d8484ebb15b",
+      "archive_sha256": "bb114fa8e077a2e824114d23e82786c2626911884f5d761a50c38d8484ebb15b",
+      "copy": "byte-identical final scientific source"
+    },
+    {
+      "archive_path": "src/vendor/AnoDDAE/src/model.py",
+      "source_sha256": "1004991bf4e6ee5b65215773a095ed79764b1b1526da406c0978bdb5c9d12cc7",
+      "archive_sha256": "1004991bf4e6ee5b65215773a095ed79764b1b1526da406c0978bdb5c9d12cc7",
+      "copy": "byte-identical final scientific source"
+    },
+    {
+      "archive_path": "src/vendor/AnoDDAE/src/utils.py",
+      "source_sha256": "ae2c18d7bcf226f67ca13f9c2f32f336d36c98d6ae7799df39305830369327e8",
+      "archive_sha256": "ae2c18d7bcf226f67ca13f9c2f32f336d36c98d6ae7799df39305830369327e8",
+      "copy": "byte-identical final scientific source"
+    },
+    {
+      "archive_path": "src/baselines/native7.py",
+      "source_sha256": "c4fb7f9350f55fda52bac426c87231e8325607eec54cb2b912eecff38112427e",
+      "archive_sha256": "c4fb7f9350f55fda52bac426c87231e8325607eec54cb2b912eecff38112427e",
+      "copy": "byte-identical local DDAE-C adapter; other external adapters require their own sources"
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "selection_metric": "Equal-dataset macro AP after averaging A/B within each training seed; final selection among three-seed confirmations",
+  "configurations": [
+    {
+      "lambda": 0.2,
+      "c": 1.0,
+      "completed_training_seeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "lambda": 0.2,
+      "c": 1.5,
+      "completed_training_seeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "lambda": 0.2,
+      "c": 2.0,
+      "completed_training_seeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "lambda": 0.4,
+      "c": 1.0,
+      "completed_training_seeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "lambda": 0.4,
+      "c": 1.5,
+      "completed_training_seeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "lambda": 0.4,
+      "c": 2.0,
+      "completed_training_seeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "lambda": 0.8,
+      "c": 1.0,
+      "completed_training_seeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "lambda": 0.8,
+      "c": 1.5,
+      "completed_training_seeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "lambda": 0.8,
+      "c": 2.0,
+      "completed_training_seeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "lambda": 1.2,
+      "c": 1.0,
+      "completed_training_seeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "lambda": 1.2,
+      "c": 1.5,
+      "completed_training_seeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "lambda": 1.2,
+      "c": 2.0,
+      "completed_training_seeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "lambda": 0.4,
+      "c": 3.0,
+      "completed_training_seeds": [
+        42
+      ]
+    },
+    {
+      "lambda": 0.4,
+      "c": 4.0,
+      "completed_training_seeds": [
+        42
+      ]
+    },
+    {
+      "lambda": 0.8,
+      "c": 3.0,
+      "completed_training_seeds": [
+        42
+      ]
+    },
+    {
+      "lambda": 0.8,
+      "c": 4.0,
+      "completed_training_seeds": [
+        42
+      ]
+    },
+    {
+      "lambda": 1.2,
+      "c": 3.0,
+      "completed_training_seeds": [
+        42
+      ]
+    },
+    {
+      "lambda": 1.2,
+      "c": 4.0,
+      "completed_training_seeds": [
+        42
+      ]
+    },
+    {
+      "lambda": 2.4,
+      "c": 1.0,
+      "completed_training_seeds": [
+        42
+      ]
+    },
+    {
+      "lambda": 2.4,
+      "c": 2.0,
+      "completed_training_seeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "lambda": 2.4,
+      "c": 3.0,
+      "completed_training_seeds": [
+        42
+      ]
+    },
+    {
+      "lambda": 2.4,
+      "c": 4.0,
+      "completed_training_seeds": [
+        42
+      ]
+    },
+    {
+      "lambda": 4.8,
+      "c": 1.0,
+      "completed_training_seeds": [
+        42
+      ]
+    },
+    {
+      "lambda": 4.8,
+      "c": 2.0,
+      "completed_training_seeds": [
+        42
+      ]
+    },
+    {
+      "lambda": 4.8,
+      "c": 3.0,
+      "completed_training_seeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "lambda": 4.8,
+      "c": 4.0,
+      "completed_training_seeds": [
+        42
+      ]
+    },
+    {
+      "lambda": 3.39411255,
+      "c": 3.0,
+      "completed_training_seeds": [
+        42
+      ]
+    },
+    {
+      "lambda": 4.8,
+      "c": 2.5,
+      "completed_training_seeds": [
+        42
+      ]
+    },
+    {
+      "lambda": 4.8,
+      "c": 3.5,
+      "completed_training_seeds": [
+        42
+      ]
+    }
+  ],
+  "selected": {
+    "lambda": 1.2,
+    "c": 2.0
+  },
+  "interpretation": "All configurations used the 24 selected datasets. Labels were used in development; these are not independent blind validation results."
+}

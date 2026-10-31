@@ -1,0 +1,18 @@
+{
+  "normal_and_component_receipt_environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "torch": "2.5.1+cu124",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "sklearn": "1.7.2",
+    "cuda": "12.4",
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU"
+  },
+  "mixed_training_receipt_environment": {
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "torch": "2.5.1+cu124",
+    "sklearn": "1.7.2"
+  },
+  "note": "Receipt-declared versions are preserved as evidence; a portable installation does not promise identical floating-point trajectories across devices or dependency versions."
+}

@@ -1,0 +1,94 @@
+{
+  "methods": {
+    "DAE": {
+      "config": {
+        "lr": 0.001,
+        "sigma": 0.1,
+        "batch_size": "stock_from_total_N"
+      },
+      "label": "DAE_local_fixed_sigma0p1",
+      "basis": "Paper Gaussian corruption/MSE; missing sigma=.1,512/512 architecture and clean-input L2 score explicitly fixed locally."
+    },
+    "DDAE-C": {
+      "config": {
+        "lr": 0.001,
+        "alpha": 0.5,
+        "batch_size": "stock_from_total_N"
+      },
+      "label": "DDAE-C_paper_local_fixed_alpha0p5",
+      "basis": "Paper sections3.4 Eq7/8: independent training positives, clean/noisy negatives, m=1+t/50. Local missing choices: alpha=.5, last hidden activation512 as latent, equal positive/negative means, positive private bank seed+1000000. Same native DDAE backbone/T50/R49, no warmup."
+    },
+    "RDP": {
+      "config": {
+        "lr": 0.1,
+        "batch_size": 192,
+        "representation_dim": 50,
+        "dropout": 0.1,
+        "momentum": 0.9,
+        "clip_grad_norm": 0.1
+      },
+      "label": "RDP_author_core_fullnormal100",
+      "basis": "Paper anomaly setting50units/SGD/.1/192 plus original RDP_Model. Single full-normal core model, no forest/bootstrap/filtering because all original training normals retained;100 instead of paper200. This is a declared protocol adaptation, not exact published RDP forest reproduction."
+    },
+    "MCM": {
+      "config": {
+        "lr": 0.05,
+        "batch_size": 512,
+        "hidden_dim": 256,
+        "z_dim": 128,
+        "mask_num": 15,
+        "en_nlayers": 3,
+        "de_nlayers": 3,
+        "mask_nlayers": 3,
+        "lambda": 20
+      },
+      "label": "MCM_fixed_lambda20_100",
+      "basis": "Paper implementation256/128,3-layer enc/dec,15masks,batch512; AppendixB explicitly studies shared lambda20. Learning rate=.05 and gamma=.98 from official main.py applied globally, not per-dataset search;100 vs paper200; final epoch instead of training-loss checkpoint selection."
+    },
+    "NeuTraL": {
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "enc_hdim": 64,
+        "latent_dim": 32,
+        "enc_nlayers": 3,
+        "num_trans": 11,
+        "trans_nlayers": 3,
+        "trans_type": "mul",
+        "enc_bias": false,
+        "batch_norm": false
+      },
+      "label": "NeuTraL_paper_tabular_fixed100",
+      "basis": "Paper tabular multiplicative masks,3linear encoder/mask layers,11 transforms/32latent from Arrhythmia; global reuse of this topology explicitly local. lr=.001,batch128,weight_decay1e-5 from author thyroid config; no early stopping;100 vs author200."
+    },
+    "DRL": {
+      "config": {
+        "lr": 0.05,
+        "batch_size": 512,
+        "hidden_dim": 128,
+        "en_nlayers": 3,
+        "de_nlayers": 3,
+        "prototype_num": 5,
+        "diversity": true,
+        "plearn": false,
+        "input_info": true,
+        "input_info_ratio": 0.1,
+        "cl": true,
+        "cl_ratio": 0.06
+      },
+      "label": "DRL_author_fixed100",
+      "basis": "Official configs.py hidden128/layers3/lr.05/batch512/gamma.98; README example alignment.1,separation.06,5orthogonal fixed prototypes. One global config; ignore predefines per-dataset epoch choices and test-AUROC search. Paper OpenReview PDF blocked403; no claim to have inspected inaccessible pages. Singleton empty separation pair set defined0 as declared boundary fix."
+    },
+    "Disent": {
+      "config": {
+        "lr": 0.0001,
+        "hidden_dim": 128,
+        "patch_size": 1,
+        "overlap": 0,
+        "batch_size": 64
+      },
+      "label": "Disent_paper_config100",
+      "basis": "PaperSec4.3/AppB and official dataset YAML exact named old versions where available; otherwise locally fixed128/patch1/batch64. All use100 final epochs, no testAP epoch selection, no second normalization. Author patches use all features; exact matched configs frozen per-case below."
+    }
+  }
+}
